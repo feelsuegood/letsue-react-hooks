@@ -1,0 +1,25 @@
+{
+  "name": "letsue-react-hooks",
+  "version": "1.0.0",
+  "description": "React Hooks Practice",
+  "main": "index.js",
+  "keywords": [
+    "react",
+    "hooks"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feelsuegood/letsue-react-hooks.git"
+  },
+  "author": "feelsuegood <feelsuegood@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/feelsuegood/letsue-react-hooks/issues"
+  },
+  "homepage": "https://github.com/feelsuegood/letsue-react-hooks#readme",
+  "peerDependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "axios": "1.9.0"
+  }
+}

@@ -1,17 +1,17 @@
 import { useEffect, useRef } from "react";
 
-export const useClick = (onClick) => {
-  if (typeof onClick !== "function") {
+export const useHover = (onHover) => {
+  if (typeof onHover !== "function") {
     return;
   }
   const element = useRef();
   useEffect(() => {
     if (element.current) {
-      element.current.addEventListener("click", onClick);
+      element.current.addEventListener("mouseenter", onHover);
     }
     return () => {
       if (element.current) {
-        element.current.removeEventListener("click", onClick);
+        element.current.removeEventListener("mouseenter", onHover);
       }
     };
   }, []);
@@ -19,15 +19,12 @@ export const useClick = (onClick) => {
 };
 
 export default function App() {
-  // const coffee = useRef();
-  // setTimeout(() => console.log(coffee.current), 3000);
-  // setTimeout(() => coffee.current.focus(), 3000);
   const sayHello = () => console.log("say hello");
-  const title = useClick(sayHello);
+  const title = useHover(sayHello);
   return (
     <div>
       {/* <input ref={coffee} placeholder="yo" /> */}
-      <h1 ref={title}>useClick</h1>
+      <h1 ref={title}>useHover</h1>
     </div>
   );
 }
