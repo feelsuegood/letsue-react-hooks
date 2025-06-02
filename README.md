@@ -29,7 +29,7 @@ Collection of custom React hooks for practical use cases.
 ## 📚 References
 - [Use CodeSandbox](https://codesandbox.io/)
 - [React v16.8: The One with Hooks 6 Feb 2019](https://legacy.reactjs.org/blog/2019/02/06/react-v16.8.0.html)
-- [Hooks API Reference](https://legacy.reactjs.org/docs/hooks-reference.html)
+- [React v16.8: Hooks API Reference](https://legacy.reactjs.org/docs/hooks-reference.html)
 
 ## 📄 License
 MIT
